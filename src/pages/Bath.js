@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Bath = () => {
+const Bath = (props) => {
     return (
-        <div>
-            <h3>Bath</h3>
+        <div className='both' id={`bath-${props.size}`}>
+            <h3>Bath {props.size}</h3>
         </div>
     )
 }

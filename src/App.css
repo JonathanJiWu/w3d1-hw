@@ -1,4 +1,4 @@
-div {
+/* div {
 
   border: 1px solid grey;
 
@@ -6,4 +6,112 @@ div {
 
   padding: 5px;
 
-  }
+  } */
+/* #bed-2 {
+  background-color: aqua;
+}
+#bed-1 {
+  background-color: rgb(53, 202, 202);
+}
+#bed-3 {
+  background-color: rgb(50, 75, 75);
+}
+#bath-full {
+  background-color: rgb(65, 16, 58);
+}
+#bath-half {
+  background-color: rgb(224, 222, 64);
+} */
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  align-content: stretch;
+  justify-items: stretch;
+  align-items: stretch;
+  width: 1000px;
+  height: 1000px;
+}
+
+.kitchen {
+  grid-area: 1 / 3 / 4 / 6;
+  background-color: #e85f5c;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  align-content: stretch;
+  justify-items: stretch;
+  align-items: stretch;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  text-align: center;
+}
+
+.bath-half {
+  grid-area: 1 / 6 / 3 / 7;
+  background-color: #acf39d;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  text-align: center;
+}
+
+.bath-full {
+  grid-area: 2 / 1 / 4 / 3;
+  background-color: #1d84b5;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  text-align: center;
+}
+
+.bed1 {
+  grid-area: 4 / 1 / 7 / 3;
+  background-color: #e3b5a4;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  text-align: center;
+}
+
+.livingroom {
+  grid-area: 4 / 3 / 7 / 7;
+  background-color: #53a2be;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  text-align: center;
+}
+
+.bed3 {
+  grid-area: 4 / 7 / 7 / 9;
+  background-color: #f1a208;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  text-align: center;
+}
+
+.bed2 {
+  grid-area: 7 / 3 / 9 / 7;
+  background-color: #eef4d4;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  text-align: center;
+}
+.oven {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #eef4d4;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  text-align: center;
+}
+
+.sink {
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: #eef4d4;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  text-align: center;
+}
